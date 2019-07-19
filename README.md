@@ -4,7 +4,7 @@ Pytorch implementation of "SinGAN: Learning a Generative Model from a Single Nat
 
 This implementation is based on these repos.
 * [Pytorch Official ImageNet Example](https://github.com/pytorch/examples/tree/master/imagenet)
-* [Official repo. of " Which Training Methods for GANs do actually Converge?"](https://github.com/LMescheder/GAN_stability)
+* [Official Repository of " Which Training Methods for GANs do actually Converge?"](https://github.com/LMescheder/GAN_stability)
 
 ## Abstract
 We introduce SinGAN, an unconditional generative
