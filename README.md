@@ -136,7 +136,11 @@ python main.py --gpu 0 --img_to_use 0 --img_size_max 1025 --gantype zerogp --val
    ![org](./src/result/org/ORGTRAIN_5.png) ![rec](./src/result/recon/REC_5.png) ![gen](./src/result/gen/GEN_5_0.png)  
    ![org](./src/result/org/ORGTRAIN_7.png) ![rec](./src/result/recon/REC_7.png) ![gen](./src/result/gen/GEN_7_0.png)  
   
-   * More result for generation (249px)  
+   * More result for generation (187, 249px)  
+![gen](./src/result/gen/more/etc/GEN_7_0.png) ![gen](./src/result/gen/more/etc/GEN_7_1.png) ![gen](./src/result/gen/more/etc/GEN_7_2.png)  
+   ![gen](./src/result/gen/more/etc/GEN_7_3.png) ![gen](./src/result/gen/more/etc/GEN_7_4.png) ![gen](./src/result/gen/more/etc/GEN_7_5.png)  
+   ![gen](./src/result/gen/more/etc/GEN_7_7.png) ![gen](./src/result/gen/more/etc/GEN_7_8.png) ![gen](./src/result/gen/more/etc/GEN_7_9.png)  
+   
    ![gen](./src/result/gen/more/thunder/GEN_8_24.png) ![gen](./src/result/gen/more/thunder/GEN_8_25.png) ![gen](./src/result/gen/more/thunder/GEN_8_26.png)  
    ![gen](./src/result/gen/more/thunder/GEN_8_27.png) ![gen](./src/result/gen/more/thunder/GEN_8_28.png) ![gen](./src/result/gen/more/thunder/GEN_8_29.png)  
    ![gen](./src/result/gen/more/thunder/GEN_8_30.png) ![gen](./src/result/gen/more/thunder/GEN_8_31.png) ![gen](./src/result/gen/more/thunder/GEN_8_32.png)  
