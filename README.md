@@ -40,7 +40,7 @@ image manipulation tasks.
 
 ## Notes
   * GAN with Zero-centered GP and larger weight of reconstruction loss exhibits better quality.
-
+  * Inter-run variance is large
 ## Requirement
   * python 3.6
   * pytorch 1.0.0 or 1.1.0
