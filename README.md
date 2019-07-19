@@ -1,10 +1,12 @@
 # SinGAN: Learning a Generative Model from a Single Natural Image
 Pytorch implementation of "SinGAN: Learning a Generative Model from a Single Natural Image" 
-[arxiv](https://arxiv.org/abs/1905.01164)
+([arxiv](https://arxiv.org/abs/1905.01164))
 
 This implementation is based on these repos.
 * [Pytorch Official ImageNet Example](https://github.com/pytorch/examples/tree/master/imagenet)
 * [Official Repository of " Which Training Methods for GANs do actually Converge?"](https://github.com/LMescheder/GAN_stability)
+
+![structure](./src/structure.png)
 
 ## Abstract
 We introduce SinGAN, an unconditional generative
@@ -31,6 +33,7 @@ image manipulation tasks.
 - [X] Scaling noise by the root mean square error between input image and reconstructed one
 - [X] Zero padding at the image level (not feature level)
 - [X] WGAN-GP loss
+
 ### Additional implementation for better quality
 - [X] LSGAN loss
 - [X] Non-saturating loss with zero-centered gradient penalty
@@ -51,7 +54,7 @@ image manipulation tasks.
   * Download "monet2photo" dataset from https://people.eecs.berkeley.edu/~taesung_park/CycleGAN/datasets/
   * Extract and rename "trainB" and "testB" to "trainPhoto" and "testPhoto", respectively. Then, place "trainPhoto" and "testPhoto" in "SinGANdata" folder
 
-  * Directory should be like :
+  * Example directory hierarchy :
   ```
   Project
   |--- data
@@ -70,8 +73,55 @@ image manipulation tasks.
    * Then, an image in "trainPhoto" will be selected randomly for training.
    
 ## How to Run
+### Arguments
+   * data_dir
+       * Path of dataset. If you follow the example hierarchy, let it default.
+   * dataset
+       * Dataset to use. It is fixed to "PHOTO".
+   * gantype
+       * Loss type of GANs. You can choose among "wgangp, zerogp, lsgan". Recommend to use "zerogp".
+   * model_name
+       * Prefix of the directory of log files.
+   * workers
+       * Workers to use for loading dataset.
+   * batch_size
+       * Size of batch, it is fixed to "1". SinGAN uses only one image.
+   * val_batch
+       * Size of batch in validation, it is fixed to "1". SinGAN uses only one image.
+   * img_size_max
+       * Size of largest image. = Finest
+   * img_size_min
+       * Size of smallest image. = Coarsest
+   * img_to_use
+       * Index of the image to use. If you do not change, it will be sampled randomly.
+   * load_model
+       * Directory of the model to load.
+   * validation
+       * If you call, the code will go into the validation mode.
+   * test
+       * If you call, the code will go into the test mode. But, it is the same as validation essentially.
+   * world-size
+       * Do not change.
+   * rank
+       * Do not change.
+   * gpu
+       * GPU number to use. You should set. Unless it utilizes all the available GPUs.
+   * multiprocessing-distributed
+       * Do not use in this setting.
+   * port
+       * Do not use in the setting.
+
+SinGAN uses only one image to train and test. Therefore multi-gpus mode is not supported.
+   
 ### Train
-   * dd
+   * Use NS loss with zero-cented GP and 0-th gpu. The train image will be selected randomly. It will generate (1052, 1052) images at last.
+```
+python main.py --gpu 0 --gantype zerogp --img_size_max 1025
+```
+   * Use WGAN-GP loss to train and 0-th gpu.
+```
+python main.py --gpu 0 --img_to_use 0 --img_size_max 1025 --gantype wgangp
+```
 ### Test
 
 ## Results
