@@ -137,7 +137,7 @@ python main.py --gpu 0 --img_to_use 0 --img_size_max 1025 --gantype zerogp --val
    ![org](./src/result/org/ORGTRAIN_5.png) ![rec](./src/result/recon/REC_5.png) ![gen](./src/result/gen/GEN_5_0.png)  
    ![org](./src/result/org/ORGTRAIN_7.png) ![rec](./src/result/recon/REC_7.png) ![gen](./src/result/gen/GEN_7_0.png)  
   
-   * More result for generation (187, 249px)  
+   * More result for generation (187, 249px / Last two images in upper group are recon/real)  
 ![gen](./src/result/gen/more/etc/GEN_7_0.png) ![gen](./src/result/gen/more/etc/GEN_7_1.png) ![gen](./src/result/gen/more/etc/GEN_7_2.png)  
    ![gen](./src/result/gen/more/etc/GEN_7_3.png) ![gen](./src/result/gen/more/etc/GEN_7_4.png) ![gen](./src/result/gen/more/etc/GEN_7_5.png)  
    ![gen](./src/result/gen/more/etc/GEN_7_6.png) ![gen](./src/result/gen/more/etc/GEN_7_7.png) ![gen](./src/result/gen/more/etc/GEN_7_8.png)  
