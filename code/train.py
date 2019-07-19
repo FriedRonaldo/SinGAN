@@ -92,12 +92,12 @@ def trainSinGAN(data_loader, networks, opts, stage, args, additional):
             elif args.gantype == 'zerogp':
                 # zero centered GP
                 g_fake = F.binary_cross_entropy_with_logits(torch.mean(g_fake_logit, (2, 3)), ones)
-                g_loss = g_fake + 50.0 * g_rec
+                g_loss = g_fake + 10.0 * g_rec
 
             elif args.gantype == 'lsgan':
                 # lsgan
                 g_fake = F.mse_loss(torch.mean(g_fake_logit, (2, 3)), 0.9 * ones)
-                g_loss = g_fake + 50.0 * g_rec
+                g_loss = g_fake + 10.0 * g_rec
 
             g_loss.backward()
             g_opt.step()
