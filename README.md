@@ -123,6 +123,12 @@ python main.py --gpu 0 --gantype zerogp --img_size_max 1025
 python main.py --gpu 0 --img_to_use 0 --img_size_max 1025 --gantype wgangp
 ```
 ### Test
+```
+python main.py --gpu 0 --img_to_use 0 --img_size_max 1025 --gantype zerogp --validation --load_model $(dir)
+```
 
+   * Running the script in "Train" stores the intermediate results automatically. So, you do not need to run "Test".
+   
 ## Results
-   * dd
+   * Original / Reconstructed / Generated  
+   ![org](./src/result/org/ORGTRAIN_0.png) ![rec](./src/result/recon/REC_1.png)
