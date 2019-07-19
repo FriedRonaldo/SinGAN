@@ -73,6 +73,27 @@ image manipulation tasks.
    * Then, an image in "trainPhoto" will be selected randomly for training.
    
 ## How to Run
+### Arguments
+   * data_dir
+    ** dd
+   * dataset
+   * gantype
+   * model_name
+   * workers
+   * batch_size
+   * val_batch
+   * img_size_max
+   * img_size_min
+   * img_to_use
+   * load_model
+   * validation
+   * test
+   * world-size
+   * rank
+   * gpu
+   * multiprocessing-distributed
+   * port
+   
 ### Train
    * dd
 ### Test
