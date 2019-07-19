@@ -114,7 +114,14 @@ image manipulation tasks.
 SinGAN uses only one image to train and test. Therefore multi-gpus mode is not supported.
    
 ### Train
-   * dd
+   * Use NS loss with zero-cented GP and 0-th gpu. The train image will be selected randomly. It will generate (1052, 1052) images at last.
+```
+python main.py --gpu 0 --gantype zerogp --img_size_max 1025
+```
+   * Use WGAN-GP loss to train and 0-th gpu.
+```
+python main.py --gpu 0 --img_to_use 0 --img_size_max 1025 --gantype wgangp
+```
 ### Test
 
 ## Results
