@@ -35,6 +35,9 @@ image manipulation tasks.
 - [X] LSGAN loss
 - [X] Non-saturating loss with zero-centered gradient penalty
 
+## Notes
+  * GAN with Zero-centered GP and larger weight of reconstruction loss exhibits better quality.
+
 ## Requirement
   * python 3.6
   * pytorch 1.0.0 or 1.1.0
@@ -66,7 +69,10 @@ image manipulation tasks.
   ```
    * Then, an image in "trainPhoto" will be selected randomly for training.
    
-  ## How to Run
-  ### Train
-   * 
-  ### Test
+## How to Run
+### Train
+   * dd
+### Test
+
+## Results
+   * dd
