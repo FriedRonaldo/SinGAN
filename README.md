@@ -31,6 +31,7 @@ image manipulation tasks.
 - [X] Scaling noise by the root mean square error between input image and reconstructed one
 - [X] Zero padding at the image level (not feature level)
 - [X] WGAN-GP loss
+### Additional implementation for better quality
 - [X] LSGAN loss
 - [X] Non-saturating loss with zero-centered gradient penalty
 
