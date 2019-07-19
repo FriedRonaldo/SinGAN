@@ -6,7 +6,8 @@ This implementation is based on these repos.
 * [Pytorch Official ImageNet Example](https://github.com/pytorch/examples/tree/master/imagenet)
 * [Official Repository of " Which Training Methods for GANs do actually Converge?"](https://github.com/LMescheder/GAN_stability)
 
-![structure][./src/structure.png]
+![structure](./src/structure.png)
+
 ## Abstract
 We introduce SinGAN, an unconditional generative
 model that can be learned from a single natural image.
@@ -32,6 +33,7 @@ image manipulation tasks.
 - [X] Scaling noise by the root mean square error between input image and reconstructed one
 - [X] Zero padding at the image level (not feature level)
 - [X] WGAN-GP loss
+
 ### Additional implementation for better quality
 - [X] LSGAN loss
 - [X] Non-saturating loss with zero-centered gradient penalty
