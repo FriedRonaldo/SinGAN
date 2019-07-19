@@ -1,6 +1,6 @@
 # SinGAN: Learning a Generative Model from a Single Natural Image
 Pytorch implementation of "SinGAN: Learning a Generative Model from a Single Natural Image" 
-[arxiv](https://arxiv.org/abs/1905.01164)
+([arxiv](https://arxiv.org/abs/1905.01164))
 
 This implementation is based on these repos.
 * [Pytorch Official ImageNet Example](https://github.com/pytorch/examples/tree/master/imagenet)
