@@ -6,6 +6,7 @@ This implementation is based on these repos.
 * [Pytorch Official ImageNet Example](https://github.com/pytorch/examples/tree/master/imagenet)
 * [Official Repository of " Which Training Methods for GANs do actually Converge?"](https://github.com/LMescheder/GAN_stability)
 
+![structure][./src/structure.png]
 ## Abstract
 We introduce SinGAN, an unconditional generative
 model that can be learned from a single natural image.
