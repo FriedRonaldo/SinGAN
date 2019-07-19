@@ -143,12 +143,12 @@ python main.py --gpu 0 --img_to_use 0 --img_size_max 1025 --gantype zerogp --val
    ![gen](./src/result/gen/more/etc/GEN_7_3.png) ![gen](./src/result/gen/more/etc/GEN_7_4.png) ![gen](./src/result/gen/more/etc/GEN_7_5.png)  
    ![gen](./src/result/gen/more/etc/GEN_7_6.png) ![gen](./src/result/gen/more/etc/GEN_7_7.png) ![gen](./src/result/gen/more/etc/GEN_7_8.png)  
    ![gen](./src/result/gen/more/etc/GEN_7_9.png) ![gen](./src/result/gen/more/etc/REC_7.png) ![gen](./src/result/gen/more/etc/ORGTRAIN_7.png)  
-      * 187px / Recon. image and real one are placed among fakes.
+      * 187px / Recon. image and real one are placed among fakes.  
 ![gen](./src/result/gen/more/sunrise/GEN_7_7.png) ![gen](./src/result/gen/more/sunrise/GEN_7_8.png) ![gen](./src/result/gen/more/sunrise/GEN_7_12.png)  
    ![gen](./src/result/gen/more/sunrise/GEN_7_17.png) ![gen](./src/result/gen/more/sunrise/GEN_7_21.png) ![gen](./src/result/gen/more/sunrise/GEN_7_28.png)  
    ![gen](./src/result/gen/more/sunrise/REC_7.png) ![gen](./src/result/gen/more/sunrise/GEN_7_37.png) ![gen](./src/result/gen/more/sunrise/GEN_7_44.png)  
    ![gen](./src/result/gen/more/sunrise/GEN_7_48.png) ![gen](./src/result/gen/more/sunrise/ORG_7.png) ![gen](./src/result/gen/more/sunrise/GEN_7_49.png)  
-      * 247px
+      * 247px  
    ![gen](./src/result/gen/more/thunder/GEN_8_24.png) ![gen](./src/result/gen/more/thunder/GEN_8_25.png) ![gen](./src/result/gen/more/thunder/GEN_8_26.png)  
    ![gen](./src/result/gen/more/thunder/GEN_8_27.png) ![gen](./src/result/gen/more/thunder/GEN_8_28.png) ![gen](./src/result/gen/more/thunder/GEN_8_29.png)  
    ![gen](./src/result/gen/more/thunder/GEN_8_30.png) ![gen](./src/result/gen/more/thunder/GEN_8_31.png) ![gen](./src/result/gen/more/thunder/GEN_8_32.png)  
