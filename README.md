@@ -2,9 +2,8 @@
 Pytorch implementation of "SinGAN: Learning a Generative Model from a Single Natural Image"
 
 ## Todo
-- [X] Multi-scale GAN 
+- [X] Multi-scale GAN with progression
 - [X] Initialization via copy
-- [X] Scale progression
 - [X] Scaling noise by the root mean square error between input image and reconstructed one
 - [X] Zero padding at the image level (not feature level)
 - [X] WGAN-GP loss
