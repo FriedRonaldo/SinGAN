@@ -131,4 +131,4 @@ python main.py --gpu 0 --img_to_use 0 --img_size_max 1025 --gantype zerogp --val
    
 ## Results
    * Original / Reconstructed / Generated  
-   ![org](./src/result/org/ORGTRAIN_0.png) ![rec](./src/result/recon/REC_1.png)
+   ![org](./src/result/org/ORGTRAIN_1.png) ![rec](./src/result/recon/REC_1.png) ![gen](./src/result/gen/GEN_1_0.png)
