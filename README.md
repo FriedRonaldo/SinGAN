@@ -131,8 +131,8 @@ python main.py --gpu 0 --img_to_use 0 --img_size_max 1025 --gantype zerogp --val
    
 ## Results
    * Original / Reconstructed / Generated  
-   ![org](./src/result/org/ORGTRAIN_1.png) ![rec](./src/result/recon/REC_1.png) ![gen](./src/result/gen/GEN_1_0.png)
-   ![org](./src/result/org/ORGTRAIN_1.png) ![rec](./src/result/recon/REC_3.png) ![gen](./src/result/gen/GEN_3_0.png)
-   ![org](./src/result/org/ORGTRAIN_1.png) ![rec](./src/result/recon/REC_5.png) ![gen](./src/result/gen/GEN_5_0.png)
-   ![org](./src/result/org/ORGTRAIN_1.png) ![rec](./src/result/recon/REC_7.png) ![gen](./src/result/gen/GEN_7_0.png)
+   ![org](./src/result/org/ORGTRAIN_1.png) ![rec](./src/result/recon/REC_1.png) ![gen](./src/result/gen/GEN_1_0.png)  
+   ![org](./src/result/org/ORGTRAIN_3.png) ![rec](./src/result/recon/REC_3.png) ![gen](./src/result/gen/GEN_3_0.png)  
+   ![org](./src/result/org/ORGTRAIN_5.png) ![rec](./src/result/recon/REC_5.png) ![gen](./src/result/gen/GEN_5_0.png)  
+   ![org](./src/result/org/ORGTRAIN_7.png) ![rec](./src/result/recon/REC_7.png) ![gen](./src/result/gen/GEN_7_0.png)  
   
