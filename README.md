@@ -130,6 +130,7 @@ python main.py --gpu 0 --img_to_use 0 --img_size_max 1025 --gantype zerogp --val
    * Running the script in "Train" stores the intermediate results automatically. So, you do not need to run "Test".
    
 ## Results
+   * Thunder image is from : [Google](https://www.google.com/search?q=%EB%B2%88%EA%B0%9C+%EC%82%AC%EC%A7%84&newwindow=1&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiHq56y98DjAhVpwosBHUk7B4UQ_AUIESgB&biw=1855&bih=952#imgrc=WRuGDsKOTh9ShM:)
    * Original / Reconstructed / Generated (33, 59, 105, 187 px)  
    ![org](./src/result/org/ORGTRAIN_1.png) ![rec](./src/result/recon/REC_1.png) ![gen](./src/result/gen/GEN_1_0.png)  
    ![org](./src/result/org/ORGTRAIN_3.png) ![rec](./src/result/recon/REC_3.png) ![gen](./src/result/gen/GEN_3_0.png)  
@@ -146,3 +147,8 @@ python main.py --gpu 0 --img_to_use 0 --img_size_max 1025 --gantype zerogp --val
    ![gen](./src/result/gen/more/thunder/GEN_8_30.png) ![gen](./src/result/gen/more/thunder/GEN_8_31.png) ![gen](./src/result/gen/more/thunder/GEN_8_32.png)  
    ![gen](./src/result/gen/more/thunder/GEN_8_33.png) ![gen](./src/result/gen/more/thunder/GEN_8_34.png) ![gen](./src/result/gen/more/thunder/GEN_8_35.png)  
    
+## References
+   * Shaham, Tamar Rott, Tali Dekel, and Tomer Michaeli. "SinGAN: Learning a Generative Model from a Single Natural Image." arXiv preprint arXiv:1905.01164 (2019).
+   * Gulrajani, Ishaan, et al. "Improved training of wasserstein gans." Advances in neural information processing systems. 2017.
+   * Mescheder, Lars, Andreas Geiger, and Sebastian Nowozin. "Which training methods for GANs do actually converge?." arXiv preprint arXiv:1801.04406 (2018).
+   * Zhu, Jun-Yan, et al. "Unpaired image-to-image translation using cycle-consistent adversarial networks." Proceedings of the IEEE international conference on computer vision. 2017.
