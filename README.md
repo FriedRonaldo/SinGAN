@@ -153,7 +153,10 @@ python main.py --gpu 0 --img_to_use 0 --img_size_max 1025 --gantype zerogp --val
    ![gen](./src/result/gen/more/thunder/GEN_8_27.png) ![gen](./src/result/gen/more/thunder/GEN_8_28.png) ![gen](./src/result/gen/more/thunder/GEN_8_29.png)  
    ![gen](./src/result/gen/more/thunder/GEN_8_30.png) ![gen](./src/result/gen/more/thunder/GEN_8_31.png) ![gen](./src/result/gen/more/thunder/GEN_8_32.png)  
    ![gen](./src/result/gen/more/thunder/GEN_8_33.png) ![gen](./src/result/gen/more/thunder/GEN_8_34.png) ![gen](./src/result/gen/more/thunder/GEN_8_35.png)  
-   
+      * 591px  
+   ![gen](./src/result/gen/more/sunrise/GEN_11_2.png) ![gen](./src/result/gen/more/sunrise/GEN_11_24.png)  
+   ![gen](./src/result/gen/more/sunrise/GEN_11_27.png) ![gen](./src/result/gen/more/sunrise/GEN_11_35.png)  
+   ![gen](./src/result/gen/more/sunrise/GEN_11_38.png) ![gen](./src/result/gen/more/sunrise/GEN_11_5.png)  
 ## References
    * Shaham, Tamar Rott, Tali Dekel, and Tomer Michaeli. "SinGAN: Learning a Generative Model from a Single Natural Image." arXiv preprint arXiv:1905.01164 (2019).
    * Gulrajani, Ishaan, et al. "Improved training of wasserstein gans." Advances in neural information processing systems. 2017.
