@@ -27,6 +27,8 @@ def trainSinGAN(data_loader, networks, opts, stage, args, additional):
     # summary writer
     # writer = additional[0]
     train_it = iter(data_loader)
+    # total_iter = 2000 * (args.num_scale - stage + 1)
+    # decay_lr = 1600 * (args.num_scale - stage + 1)
     total_iter = 2000
     decay_lr = 1600
 
@@ -52,9 +54,6 @@ def trainSinGAN(data_loader, networks, opts, stage, args, additional):
     for xidx in range(1, stage + 1):
         x_tmp = F.interpolate(x_org, (args.size_list[xidx], args.size_list[xidx]), mode='bilinear', align_corners=True)
         x_in_list.append(x_tmp)
-
-    ones = torch.ones(x_in.size(0), 1).cuda(args.gpu)
-    zeros = torch.zeros(x_in.size(0), 1).cuda(args.gpu)
 
     for i in t_train:
         if i == decay_lr:
@@ -85,19 +84,21 @@ def trainSinGAN(data_loader, networks, opts, stage, args, additional):
 
             g_fake_logit = D(x_fake_list[-1])
 
+            ones = torch.ones_like(g_fake_logit).cuda(args.gpu)
+
             if args.gantype == 'wgangp':
                 # wgan gp
                 g_fake = -torch.mean(g_fake_logit, (2, 3))
                 g_loss = g_fake + 10.0 * g_rec
             elif args.gantype == 'zerogp':
                 # zero centered GP
-                g_fake = F.binary_cross_entropy_with_logits(torch.mean(g_fake_logit, (2, 3)), ones)
-                g_loss = g_fake + 10.0 * g_rec
+                g_fake = F.binary_cross_entropy_with_logits(g_fake_logit, ones, reduction='none').mean()
+                g_loss = g_fake + 100.0 * g_rec
 
             elif args.gantype == 'lsgan':
                 # lsgan
                 g_fake = F.mse_loss(torch.mean(g_fake_logit, (2, 3)), 0.9 * ones)
-                g_loss = g_fake + 10.0 * g_rec
+                g_loss = g_fake + 50.0 * g_rec
 
             g_loss.backward()
             g_opt.step()
@@ -114,6 +115,9 @@ def trainSinGAN(data_loader, networks, opts, stage, args, additional):
             d_fake_logit = D(x_fake_list[-1].detach())
             d_real_logit = D(x_in)
 
+            ones = torch.ones_like(d_real_logit).cuda(args.gpu)
+            zeros = torch.zeros_like(d_fake_logit).cuda(args.gpu)
+
             if args.gantype == 'wgangp':
                 # wgan gp
                 d_fake = torch.mean(d_fake_logit, (2, 3))
@@ -122,8 +126,10 @@ def trainSinGAN(data_loader, networks, opts, stage, args, additional):
                 d_loss = d_real + d_fake + 0.1 * d_gp
             elif args.gantype == 'zerogp':
                 # zero centered GP
-                d_fake = F.binary_cross_entropy_with_logits(torch.mean(d_fake_logit, (2, 3)), zeros)
-                d_real = F.binary_cross_entropy_with_logits(torch.mean(d_real_logit, (2, 3)), ones)
+                # d_fake = F.binary_cross_entropy_with_logits(torch.mean(d_fake_logit, (2, 3)), zeros)
+                d_fake = F.binary_cross_entropy_with_logits(d_fake_logit, zeros, reduction='none').mean()
+                # d_real = F.binary_cross_entropy_with_logits(torch.mean(d_real_logit, (2, 3)), ones)
+                d_real = F.binary_cross_entropy_with_logits(d_real_logit, ones, reduction='none').mean()
                 d_gp = compute_grad_gp(torch.mean(d_real_logit, (2, 3)), x_in)
                 d_loss = d_real + d_fake + 10.0 * d_gp
 
