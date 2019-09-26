@@ -2,9 +2,14 @@
 Pytorch implementation of "SinGAN: Learning a Generative Model from a Single Natural Image" 
 ([arxiv](https://arxiv.org/abs/1905.01164))
 
+>> Official repository : [SinGAN Official Pytorch implementation](https://github.com/tamarott/SinGAN)
+
 This implementation is based on these repos.
 * [Pytorch Official ImageNet Example](https://github.com/pytorch/examples/tree/master/imagenet)
 * [Official Repository of " Which Training Methods for GANs do actually Converge?"](https://github.com/LMescheder/GAN_stability)
+
+## NOTE
+This repository is not official implementation. The official one is here : [SinGAN Official Pytorch implementation](https://github.com/tamarott/SinGAN).
 
 ![structure](./src/structure.png)
 
