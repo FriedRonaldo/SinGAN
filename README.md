@@ -56,6 +56,7 @@ image manipulation tasks.
   * opencv-python (cv2)
   
 ## Data Preparation
+### THIS PROCESS IS IMPORTANT. Many people make a mistake with the directory of dataset. IF YOU'VE GOT A ERROR "out of index", PLEASE CHECK THE DIRECTORY AGAIN.
   * Download "monet2photo" dataset from https://people.eecs.berkeley.edu/~taesung_park/CycleGAN/datasets/
   * Extract and rename "trainB" and "testB" to "trainPhoto" and "testPhoto", respectively. Then, place "trainPhoto" and "testPhoto" in "SinGANdata" folder
 
