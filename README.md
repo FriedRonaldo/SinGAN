@@ -67,12 +67,13 @@ image manipulation tasks.
   |             |--- trainPhoto
   |             |--- testPhoto
   |--- SinGAN
-       |--- models
-       |        |--- generator.py
-       |        |--- ...
-       |--- main.py 
-       |--- train.py
-       | ...
+       |--- code
+             |--- models
+             |        |--- generator.py
+             |        |--- ...
+             |--- main.py 
+             |--- train.py
+             | ...
        
   ```
    * Then, an image in "trainPhoto" will be selected randomly for training.
